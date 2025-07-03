@@ -1,0 +1,57 @@
+User-agent: *
+Allow: /
+
+# Block access to admin/private areas (if you add them later)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /backup/
+
+# Block access to certain file types
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /*.log$
+
+# Allow access to CSS and JS files (important for SEO)
+Allow: /style.css
+Allow: /script.js
+Allow: /*.css$
+Allow: /*.js$
+
+# Block access to search parameters (if you add search later)
+Disallow: /*?*
+Disallow: /*&*
+
+# Specific instructions for different search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 3
+
+# Block bad bots and scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Important: Your sitemap
+Sitemap: https://canstart.in/sitemap.xml
+
+# Additional sitemaps (create these later)
+# Sitemap: https://canstart.in/sitemap-images.xml
+# Sitemap: https://canstart.in/sitemap-news.xml
