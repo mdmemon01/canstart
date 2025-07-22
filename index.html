@@ -115,148 +115,531 @@
             </div>
         </div>
     </nav>
-        <section id="home" class="pt-16 min-h-screen flex items-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="text-center">
-                <!-- Main Headline -->
-                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
-                    Transform Your Business with
-                    <span class="text-primary">Enterprise Solutions</span>
-                </h1>
-                
-                <!-- Subheadline -->
-                <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-4xl mx-auto">
-                    From LMS for law firms to ERP for education and CRM for real estate - 
-                    we build solutions that solve real business problems.
-                </p>
-                
-                <!-- Description -->
-                <p class="text-lg text-white-400 mb-12 max-w-3xl mx-auto">
-                    Stop struggling with outdated systems. We don't just build software, 
-                    we solve business challenges with technology that works.
-                </p>
-                
-                <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#solutions" class="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 transition-colors inline-flex items-center justify-center">
-                        Explore Solutions
-                        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                    <a href="#services" class="border border-slate-600 text-slate-300 px-8 py-4 rounded-lg text-lg font-semibold hover:border-primary hover:text-primary transition-colors inline-flex items-center justify-center">
-                        Custom Development
-                    </a>
+  <section id="home" class="pt-16 min-h-screen flex items-center relative overflow-hidden">
+    <!-- Animated background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-dark via-dark-card to-primary/10 z-0"></div>
+    
+    <!-- Particle effect container -->
+    <div id="particles-js" class="absolute inset-0 z-0"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 z-10">
+        <div class="text-center max-w-4xl mx-auto">
+            <!-- Animated badge -->
+            <div class="animate-bounce inline-flex items-center px-4 py-2 bg-primary/20 border border-primary/30 rounded-full mb-8">
+                <span class="animate-pulse w-2 h-2 bg-primary rounded-full mr-2"></span>
+                <span class="text-primary font-medium text-sm">Transforming Businesses Digitally</span>
+            </div>
+            
+            <!-- Dynamic headline -->
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Transform Your Business with
+                <div class="relative inline-block">
+                    <span class="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary animate-gradient-x">Enterprise Solutions</span>
+                    <span class="absolute -bottom-2 left-0 right-0 h-3 bg-gradient-to-r from-primary/30 to-secondary/30 blur-md"></span>
                 </div>
-                
-                <!-- Trust Indicators -->
-                <div class="mt-16 pt-8 border-t border-dark-border">
-                    <p class="text-sm text-white-500 mb-4">Trusted by businesses across industries</p>
-                    <div class="flex flex-wrap justify-center items-center gap-8 text-white-600">
-                        <span class="text-sm">Legal Firms</span>
-                        <span class="text-sm">Educational Institutions</span>
-                        <span class="text-sm">Real Estate Agencies</span>
-                        <span class="text-sm">Growing Businesses</span>
+            </h1>
+            
+            <!-- Animated subheadline -->
+            <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
+                From <span class="text-primary font-medium">LMS</span> for law firms to <span class="text-secondary font-medium">ERP</span> for education and <span class="text-green-400 font-medium">CRM</span> for real estate — 
+                we build solutions that solve real business problems.
+            </p>
+            
+            <p class="text-lg text-slate-400 mb-12 max-w-2xl mx-auto">
+                Stop struggling with outdated systems. We don't just build software, 
+                we solve business challenges with technology that works.
+            </p>
+            
+            <!-- Animated CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+                <a href="#solutions" class="group bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-lg text-lg font-semibold transition-all duration-300 inline-flex items-center justify-center shadow-xl shadow-primary/20 relative overflow-hidden">
+                    <span class="relative z-10">Explore Solutions</span>
+                    <svg class="ml-2 w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                </a>
+                <a href="#services" class="group border border-slate-600 text-slate-300 px-10 py-4 rounded-lg text-lg font-semibold hover:border-primary hover:text-primary transition-all duration-300 inline-flex items-center justify-center relative overflow-hidden">
+                    <span class="relative z-10">Custom Development</span>
+                    <span class="absolute top-0 left-0 w-0 h-full bg-primary/10 group-hover:w-full transition-all duration-300"></span>
+                </a>
+            </div>
+            
+            <!-- 3D Rotating Cards -->
+            <div class="grid md:grid-cols-3 gap-4 mt-16 perspective-1000">
+                <div class="card-3d bg-dark-card border border-dark-border rounded-xl p-6 transform transition-transform duration-500 hover:rotate-y-10 hover:shadow-xl">
+                    <div class="text-primary mb-3">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
                     </div>
+                    <h3 class="text-lg font-semibold text-white">Legal Firms</h3>
+                    <p class="text-sm text-slate-400">Compliance tracking & case management</p>
+                </div>
+                <div class="card-3d bg-dark-card border border-dark-border rounded-xl p-6 transform transition-transform duration-500 hover:rotate-y-10 hover:shadow-xl">
+                    <div class="text-secondary mb-3">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white">Educational Institutions</h3>
+                    <p class="text-sm text-slate-400">Student management & learning platforms</p>
+                </div>
+                <div class="card-3d bg-dark-card border border-dark-border rounded-xl p-6 transform transition-transform duration-500 hover:rotate-y-10 hover:shadow-xl">
+                    <div class="text-green-500 mb-3">
+                        <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white">Real Estate Agencies</h3>
+                    <p class="text-sm text-slate-400">Property management & client tracking</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Add particles.js library and initialize -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    // Initialize particles.js
+    document.addEventListener('DOMContentLoaded', function() {
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#3b82f6"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                },
+                "opacity": {
+                    "value": 0.3,
+                    "random": true,
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#3b82f6",
+                    "opacity": 0.2,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    });
+
+    // Add this to your CSS
+    document.head.insertAdjacentHTML('beforeend', `
+        <style>
+            @keyframes rotate-y-10 {
+                0% { transform: rotateY(0deg); }
+                100% { transform: rotateY(10deg); }
+            }
+            
+            @keyframes gradient-x {
+                0% { background-position: 0% 50%; }
+                50% { background-position: 100% 50%; }
+                100% { background-position: 0% 50%; }
+            }
+            
+            .animate-gradient-x {
+                background-size: 200% 100%;
+                animation: gradient-x 15s ease infinite;
+            }
+            
+            .perspective-1000 {
+                perspective: 1000px;
+            }
+            
+            .hover\\:rotate-y-10:hover {
+                transform: rotateY(10deg);
+            }
+        </style>
+    `);
+</script>
+
+<!-- Add particles.js library and initialize -->
+
 
     <section id="services" class="py-20 bg-slate-900/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Section Header -->
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
-                    Website Development & <span class="text-secondary">SEO Services</span>
-                </h2>
-                <p class="text-xl text-slate-300 max-w-3xl mx-auto">
-                    From stunning landing pages to powerful e-commerce platforms, we build websites that convert and rank.
-                </p>
-            </div>
-            
-            <!-- Services Grid -->
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <!-- Landing Pages -->
-                <div class="bg-dark-card border border-dark-border rounded-xl p-8 hover:border-primary transition-colors">
-                    <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-4">Landing Pages & Corporate Sites</h3>
-                    <p class="text-slate-400 mb-6">High-converting landing pages and professional corporate websites that establish credibility and drive results.</p>
-                    <ul class="text-sm text-slate-500 space-y-2">
-                        <li>• Conversion-optimized design</li>
-                        <li>• Mobile-first responsive</li>
-                        <li>• Fast loading & SEO ready</li>
-                        <li>• Analytics integration</li>
-                    </ul>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 animate-fade-in">
+                Website Development & <span class="text-secondary gradient-text">SEO Services</span>
+            </h2>
+            <p class="text-xl text-slate-300 max-w-3xl mx-auto animate-fade-in-delay">
+                From stunning landing pages to powerful e-commerce platforms, we build websites that convert and rank.
+            </p>
+        </div>
+        
+        <!-- Services Grid -->
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <!-- Landing Pages -->
+            <div class="service-card bg-dark-card border border-dark-border rounded-xl p-8 transform-gpu transition-all duration-500">
+                <div class="service-icon w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
                 </div>
-                
-                <!-- E-commerce -->
-                <div class="bg-dark-card border border-dark-border rounded-xl p-8 hover:border-primary transition-colors">
-                    <div class="w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5.5M7 13v6a2 2 0 002 2h6a2 2 0 002-2v-6m-9 0h9"></path>
-                        </svg>
+                <h3 class="text-xl font-bold text-white mb-4">Landing Pages & Corporate Sites</h3>
+                <p class="text-slate-400 mb-6">High-converting landing pages and professional corporate websites that establish credibility and drive results.</p>
+                <ul class="text-sm text-slate-500 space-y-2 mb-6">
+                    <li class="feature-item">• Conversion-optimized design</li>
+                    <li class="feature-item">• Mobile-first responsive</li>
+                    <li class="feature-item">• Fast loading & SEO ready</li>
+                    <li class="feature-item">• Analytics integration</li>
+                </ul>
+                <div class="preview-container relative h-24 mt-6 overflow-hidden rounded-md group">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-dark-card group-hover:opacity-0 transition-opacity z-10"></div>
+                    <div class="absolute inset-0 transform transition-transform duration-700 group-hover:translate-y-[-70%]">
+                        <img src="https://placehold.co/600x400/1e293b/FFFFFF?text=Landing+Page" alt="Landing page example" class="w-full object-cover">
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">E-commerce Platforms</h3>
-                    <p class="text-slate-400 mb-6">Complete e-commerce solutions with payment integration, inventory management, and scalable architecture.</p>
-                    <ul class="text-sm text-slate-500 space-y-2">
-                        <li>• Custom shopping experiences</li>
-                        <li>• Payment gateway integration</li>
-                        <li>• Inventory & order management</li>
-                        <li>• Multi-vendor support</li>
-                    </ul>
-                </div>
-                
-                <!-- SEO -->
-                <div class="bg-dark-card border border-dark-border rounded-xl p-8 hover:border-primary transition-colors">
-                    <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                        </svg>
+                    <div class="absolute bottom-0 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                        <span class="text-xs bg-primary/90 text-white px-2 py-1 rounded-t-md">View Example</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-4">SEO & Digital Growth</h3>
-                    <p class="text-slate-400 mb-6">Strategic SEO and digital marketing that drives organic traffic and delivers measurable results.</p>
-                    <ul class="text-sm text-slate-500 space-y-2">
-                        <li>• Technical SEO audits</li>
-                        <li>• Off-page optimization</li>
-                        <li>• Content strategy</li>
-                        <li>• Performance tracking</li>
-                    </ul>
                 </div>
             </div>
             
-            <!-- SEO Results Section -->
-            <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 md:p-12 border border-primary/20">
-                <div class="text-center mb-8">
-                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Our SEO Process Delivers Results</h3>
-                    <p class="text-slate-300">We don't just build websites, we make them rank and convert.</p>
+            <!-- E-commerce -->
+            <div class="service-card bg-dark-card border border-dark-border rounded-xl p-8 transform-gpu transition-all duration-500">
+                <div class="service-icon w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5.5M7 13v6a2 2 0 002 2h6a2 2 0 002-2v-6m-9 0h9"></path>
+                    </svg>
                 </div>
-                
-                <div class="grid md:grid-cols-4 gap-6 text-center">
-                    <div>
-                        <h4 class="text-lg font-semibold text-primary mb-2">Technical Audit</h4>
-                        <p class="text-sm text-slate-400">Complete site analysis and optimization recommendations</p>
+                <h3 class="text-xl font-bold text-white mb-4">E-commerce Platforms</h3>
+                <p class="text-slate-400 mb-6">Complete e-commerce solutions with payment integration, inventory management, and scalable architecture.</p>
+                <ul class="text-sm text-slate-500 space-y-2 mb-6">
+                    <li class="feature-item">• Custom shopping experiences</li>
+                    <li class="feature-item">• Payment gateway integration</li>
+                    <li class="feature-item">• Inventory & order management</li>
+                    <li class="feature-item">• Multi-vendor support</li>
+                </ul>
+                <div class="preview-container relative h-24 mt-6 overflow-hidden rounded-md group">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-dark-card group-hover:opacity-0 transition-opacity z-10"></div>
+                    <div class="absolute inset-0 transform transition-transform duration-700 group-hover:translate-y-[-70%]">
+                        <img src="https://placehold.co/600x400/1e293b/FFFFFF?text=E-commerce" alt="E-commerce example" class="w-full object-cover">
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold text-secondary mb-2">Content Strategy</h4>
-                        <p class="text-sm text-slate-400">Keyword research and content planning that ranks</p>
+                    <div class="absolute bottom-0 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                        <span class="text-xs bg-secondary/90 text-white px-2 py-1 rounded-t-md">View Example</span>
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold text-green-500 mb-2">Link Building</h4>
-                        <p class="text-sm text-slate-400">Strategic off-page SEO and authority building</p>
+                </div>
+            </div>
+            
+            <!-- SEO -->
+            <div class="service-card bg-dark-card border border-dark-border rounded-xl p-8 transform-gpu transition-all duration-500">
+                <div class="service-icon w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-4">SEO & Digital Growth</h3>
+                <p class="text-slate-400 mb-6">Strategic SEO and digital marketing that drives organic traffic and delivers measurable results.</p>
+                <ul class="text-sm text-slate-500 space-y-2 mb-6">
+                    <li class="feature-item">• Technical SEO audits</li>
+                    <li class="feature-item">• Off-page optimization</li>
+                    <li class="feature-item">• Content strategy</li>
+                    <li class="feature-item">• Performance tracking</li>
+                </ul>
+                <div class="preview-container relative h-24 mt-6 overflow-hidden rounded-md group">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-dark-card group-hover:opacity-0 transition-opacity z-10"></div>
+                    <div class="absolute inset-0 transform transition-transform duration-700 group-hover:translate-y-[-70%]">
+                        <img src="https://placehold.co/600x400/1e293b/FFFFFF?text=SEO+Analytics" alt="SEO example" class="w-full object-cover">
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold text-yellow-500 mb-2">Results Tracking</h4>
-                        <p class="text-sm text-slate-400">Monthly reports with traffic and ranking improvements</p>
+                    <div class="absolute bottom-0 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity z-20">
+                        <span class="text-xs bg-green-500/90 text-white px-2 py-1 rounded-t-md">View Example</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        
+        <!-- SEO Results Section -->
+        <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 md:p-12 border border-primary/20 relative overflow-hidden">
+            <!-- Background elements -->
+            <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
+            
+            <div class="text-center mb-8 relative z-10">
+                <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Our SEO Process Delivers Results</h3>
+                <p class="text-slate-300">We don't just build websites, we make them rank and convert.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6 relative z-10">
+                <div class="bg-dark/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700/50 transform-gpu transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/20">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-primary/50 rounded-lg mb-4 mx-auto flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">1</span>
+                    </div>
+                    <h4 class="text-lg font-semibold text-primary mb-2">Technical Audit</h4>
+                    <p class="text-sm text-slate-400">Complete site analysis and optimization recommendations</p>
+                    
+                    <!-- Animated metric -->
+                    <div class="mt-4 pt-4 border-t border-slate-700/50">
+                        <div class="text-2xl font-bold text-white"><span class="animate-count" data-count="100">0</span>%</div>
+                        <p class="text-xs text-slate-400">Performance improvement</p>
+                    </div>
+                </div>
+                
+                <div class="bg-dark/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700/50 transform-gpu transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
+                    <div class="w-12 h-12 bg-gradient-to-br from-secondary to-secondary/50 rounded-lg mb-4 mx-auto flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">2</span>
+                    </div>
+                    <h4 class="text-lg font-semibold text-secondary mb-2">Content Strategy</h4>
+                    <p class="text-sm text-slate-400">Keyword research and content planning that ranks</p>
+                    
+                    <!-- Animated metric -->
+                    <div class="mt-4 pt-4 border-t border-slate-700/50">
+                        <div class="text-2xl font-bold text-white"><span class="animate-count" data-count="65">0</span>%</div>
+                        <p class="text-xs text-slate-400">Keyword ranking improvement</p>
+                    </div>
+                </div>
+                
+                <div class="bg-dark/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700/50 transform-gpu transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20">
+                    <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-500/50 rounded-lg mb-4 mx-auto flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">3</span>
+                    </div>
+                    <h4 class="text-lg font-semibold text-green-500 mb-2">Link Building</h4>
+                    <p class="text-sm text-slate-400">Strategic off-page SEO and authority building</p>
+                    
+                    <!-- Animated metric -->
+                    <div class="mt-4 pt-4 border-t border-slate-700/50">
+                        <div class="text-2xl font-bold text-white"><span class="animate-count" data-count="200">0</span>+</div>
+                        <p class="text-xs text-slate-400">High-quality backlinks</p>
+                    </div>
+                </div>
+                
+                <div class="bg-dark/50 backdrop-blur-sm p-6 rounded-xl border border-slate-700/50 transform-gpu transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/20">
+                    <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-500/50 rounded-lg mb-4 mx-auto flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">4</span>
+                    </div>
+                    <h4 class="text-lg font-semibold text-yellow-500 mb-2">Results Tracking</h4>
+                    <p class="text-sm text-slate-400">Monthly reports with traffic and ranking improvements</p>
+                    
+                    <!-- Animated metric -->
+                    <div class="mt-4 pt-4 border-t border-slate-700/50">
+                        <div class="text-2xl font-bold text-white"><span class="animate-count" data-count="50">0</span>%</div>
+                        <p class="text-xs text-slate-400">Average traffic increase</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Animation keyframes */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.8); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Service cards styling */
+.service-card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: var(--primary-color, #3b82f6);
+}
+
+.service-icon {
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    animation: float 2s ease-in-out infinite;
+}
+
+/* Feature items animation */
+.feature-item {
+    position: relative;
+    transition: transform 0.2s ease, padding-left 0.2s ease;
+}
+
+.feature-item:hover {
+    transform: translateX(5px);
+    color: #a3b3cc;
+}
+
+/* Gradient text effect */
+.gradient-text {
+    background-image: linear-gradient(45deg, #06b6d4, #3b82f6, #a855f7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: gradientFlow 3s ease infinite;
+}
+
+/* Animation classes */
+.animate-fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+.animate-fade-in-delay {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards 0.3s;
+}
+
+/* Custom variables */
+:root {
+    --primary-color: #3b82f6;
+    --secondary-color: #06b6d4;
+    --green-color: #22c55e;
+    --yellow-color: #eab308;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Service card hover effects with vanilla-tilt (if available)
+    if (typeof VanillaTilt !== 'undefined') {
+        VanillaTilt.init(document.querySelectorAll('.service-card'), {
+            max: 5,
+            speed: 400,
+            glare: true,
+            'max-glare': 0.2,
+        });
+    }
+    
+    // Intersection Observer for animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const serviceCards = document.querySelectorAll('.service-card');
+    const countElements = document.querySelectorAll('.animate-count');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.classList.contains('service-card')) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+                
+                if (entry.target.classList.contains('animate-count')) {
+                    animateCounter(entry.target);
+                }
+                
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    // Set initial state for service cards
+    serviceCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        observer.observe(card);
+    });
+    
+    // Observe counter elements
+    countElements.forEach(el => {
+        observer.observe(el);
+    });
+    
+    // Function to animate counter
+    function animateCounter(element) {
+        const target = parseInt(element.dataset.count);
+        let count = 0;
+        const duration = 2000; // ms
+        const increment = target / (duration / 16);
+        
+        const timer = setInterval(() => {
+            count += increment;
+            element.textContent = Math.min(Math.floor(count), target);
+            
+            if (count >= target) {
+                clearInterval(timer);
+                element.textContent = target;
+            }
+        }, 16);
+    }
+    
+    // Add animation to feature items
+    const featureItems = document.querySelectorAll('.feature-item');
+    featureItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateX(-20px)';
+        
+        setTimeout(() => {
+            item.style.transition = 'all 0.5s ease';
+            item.style.opacity = '1';
+            item.style.transform = 'translateX(0)';
+        }, 300 + (index * 100));
+    });
+});
+</script>
 
     <section id="solutions" class="py-20 bg-dark">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1169,5 +1552,7 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </body>
 </html>
